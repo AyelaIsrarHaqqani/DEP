@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.avif);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.navbar {
+    width: 100%; /* Ensure the navbar spans the full width */
+    padding: 40px 130px 200px 0; /* Increase padding on the right side (40px) */
+    display: flex;
+    align-items: center; /* Align items in the center vertically */
+    justify-content: flex-end; /* Move items to the right */
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: purple;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    transform: translateX(4%);
+    text-align: left;
+    color:black;
+    margin-bottom: 40px;
+}
+/*.feature-img{
+    width: 530px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}*/
+.feature-img {
+    max-width: 100%; 
+    width: 300px; 
+    height: auto; 
+    display: block;
+    margin: 20px 10px 10px auto; /* Adjusted margins to move the image slightly to the left */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
